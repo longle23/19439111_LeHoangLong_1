@@ -1,0 +1,14 @@
+1666331449219	Delete element
+1666331472214	Rename type 'StudentRespository'
+1666331566416	Rename package 'com.example.OnThiGK'
+1666331579255	Rename package 'com.example.OnThiGK.config'
+1666331587072	Rename package 'com.example.OnThiGK.controller'
+1666331592696	Rename package 'com.example.OnThiGK.entity'
+1666331653833	Rename package 'com.example.OnThiGK.listener'
+1666331660358	Rename package 'com.example.OnThiGK.producer'
+1666331665355	Rename package 'com.example.OnThiGK.respository'
+1666331669944	Rename package 'com.example.OnThiGK.service'
+1666331747784	Rename type 'StudentService'
+1666331758173	Rename type 'StudentServiceImpl'
+1666331876650	Rename type 'StudentController'
+1666332513403	Delete elements

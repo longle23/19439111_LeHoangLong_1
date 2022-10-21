@@ -1,0 +1,63 @@
+ckage com.example.OnThiGK.entity;
+
+import java.util.Date;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "student")
+public class Student {
+	
+	@Id
+	private String id;
+	
+	private String name;
+	
+	private String createDate;
+
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	
+
+	public Student() {
+		super();
+	}
+
+	public Student(String id, String name, String createDate) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.createDate = createDate;
+	}
+
+	public String getCreateDate() {
+		return createDate;
+	}
+
+	public void setCreateDate(String createDate) {
+		this.createDate = createDate;
+	}
+
+	@Override
+	public String toString() {
+		return "Student [id=" + id + ", name=" + name + ", createDate=" + createDate + "]";
+	}
+	
+
+}

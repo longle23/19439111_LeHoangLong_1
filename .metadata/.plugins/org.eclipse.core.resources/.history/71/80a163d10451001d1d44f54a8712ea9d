@@ -1,0 +1,46 @@
+package com.example.OnThiGK.service;
+
+import java.util.List;
+
+import javax.transaction.Transactional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.example.LeHoangLong_19439111.entity.Student;
+import com.example.OnThiGK.respository.SubjectRespository;
+
+@Service
+public class StudentServiceImpl implements StudentService {
+
+	@Autowired
+	private SubjectRespository studentRespository;
+
+//	@Transactional
+	@Override
+	public List<Student> getDS() {
+		// TODO Auto-generated method stub
+		return studentRespository.findAll();
+	}
+
+//	@Transactional
+	@Override
+	public void saveStudent(Student student) {
+		studentRespository.save(student);
+
+	}
+
+
+	@Override
+	public void deleteStudent(String id) {
+		studentRespository.deleteById(id);
+		
+	}
+
+	@Override
+	public Student getById(String id) {
+		// TODO Auto-generated method stub
+		return studentRespository.findById(id).get();
+	}
+
+}
